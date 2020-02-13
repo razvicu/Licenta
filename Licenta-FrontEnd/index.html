@@ -1,0 +1,18 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<div id="app">
+    {{ message }}
+    <ul>
+        <li v-for="app in apps">
+            <div v-bind:id="'app-' + app.id">
+                <input v-bind:id="'app-checkbox-' + app.id" :value="app.name" type="checkbox" v-model="checkedApps">
+                {{ app.name }}
+            </div>
+        </li>
+    </ul>
+    <button id="saveButton" v-on:click="saveApplicationList">Save</button>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="main.js"></script>

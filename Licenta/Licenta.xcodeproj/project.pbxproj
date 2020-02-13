@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E562EEC023EF362400F2E41A /* serverCommunication.c in Sources */ = {isa = PBXBuildFile; fileRef = E562EEBF23EF362400F2E41A /* serverCommunication.c */; };
+		E576C23123BE20230053A203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E576C23023BE20230053A203 /* AppDelegate.m */; };
+		E576C23323BE20260053A203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E576C23223BE20260053A203 /* Assets.xcassets */; };
+		E576C23623BE20260053A203 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E576C23423BE20260053A203 /* MainMenu.xib */; };
+		E576C23923BE20260053A203 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E576C23823BE20260053A203 /* main.mm */; };
+		E576C24423BE20260053A203 /* LicentaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E576C24323BE20260053A203 /* LicentaTests.m */; };
+		E576C24F23BE20260053A203 /* LicentaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E576C24E23BE20260053A203 /* LicentaUITests.m */; };
+		E576C25E23BE204B0053A203 /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E576C25D23BE203E0053A203 /* libEndpointSecurity.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E576C24023BE20260053A203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E576C22423BE20230053A203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E576C22B23BE20230053A203;
+			remoteInfo = Licenta;
+		};
+		E576C24B23BE20260053A203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E576C22423BE20230053A203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E576C22B23BE20230053A203;
+			remoteInfo = Licenta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E562EEBF23EF362400F2E41A /* serverCommunication.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = serverCommunication.c; sourceTree = "<group>"; };
+		E576C22C23BE20230053A203 /* Licenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Licenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E576C22F23BE20230053A203 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E576C23023BE20230053A203 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E576C23223BE20260053A203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E576C23523BE20260053A203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E576C23723BE20260053A203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E576C23823BE20260053A203 /* main.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		E576C23A23BE20260053A203 /* Licenta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Licenta.entitlements; sourceTree = "<group>"; };
+		E576C23F23BE20260053A203 /* LicentaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicentaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E576C24323BE20260053A203 /* LicentaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LicentaTests.m; sourceTree = "<group>"; };
+		E576C24523BE20260053A203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E576C24A23BE20260053A203 /* LicentaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicentaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E576C24E23BE20260053A203 /* LicentaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LicentaUITests.m; sourceTree = "<group>"; };
+		E576C25023BE20260053A203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E576C25D23BE203E0053A203 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E576C22923BE20230053A203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E576C25E23BE204B0053A203 /* libEndpointSecurity.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576C23C23BE20260053A203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576C24723BE20260053A203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E576C22323BE20230053A203 = {
+			isa = PBXGroup;
+			children = (
+				E576C22E23BE20230053A203 /* Licenta */,
+				E576C24223BE20260053A203 /* LicentaTests */,
+				E576C24D23BE20260053A203 /* LicentaUITests */,
+				E576C22D23BE20230053A203 /* Products */,
+				E576C25C23BE203D0053A203 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E576C22D23BE20230053A203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E576C22C23BE20230053A203 /* Licenta.app */,
+				E576C23F23BE20260053A203 /* LicentaTests.xctest */,
+				E576C24A23BE20260053A203 /* LicentaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E576C22E23BE20230053A203 /* Licenta */ = {
+			isa = PBXGroup;
+			children = (
+				E576C22F23BE20230053A203 /* AppDelegate.h */,
+				E576C23023BE20230053A203 /* AppDelegate.m */,
+				E576C23223BE20260053A203 /* Assets.xcassets */,
+				E576C23423BE20260053A203 /* MainMenu.xib */,
+				E576C23723BE20260053A203 /* Info.plist */,
+				E576C23823BE20260053A203 /* main.mm */,
+				E576C23A23BE20260053A203 /* Licenta.entitlements */,
+				E562EEBF23EF362400F2E41A /* serverCommunication.c */,
+			);
+			path = Licenta;
+			sourceTree = "<group>";
+		};
+		E576C24223BE20260053A203 /* LicentaTests */ = {
+			isa = PBXGroup;
+			children = (
+				E576C24323BE20260053A203 /* LicentaTests.m */,
+				E576C24523BE20260053A203 /* Info.plist */,
+			);
+			path = LicentaTests;
+			sourceTree = "<group>";
+		};
+		E576C24D23BE20260053A203 /* LicentaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E576C24E23BE20260053A203 /* LicentaUITests.m */,
+				E576C25023BE20260053A203 /* Info.plist */,
+			);
+			path = LicentaUITests;
+			sourceTree = "<group>";
+		};
+		E576C25C23BE203D0053A203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E576C25D23BE203E0053A203 /* libEndpointSecurity.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E576C22B23BE20230053A203 /* Licenta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E576C25323BE20270053A203 /* Build configuration list for PBXNativeTarget "Licenta" */;
+			buildPhases = (
+				E576C22823BE20230053A203 /* Sources */,
+				E576C22923BE20230053A203 /* Frameworks */,
+				E576C22A23BE20230053A203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Licenta;
+			productName = Licenta;
+			productReference = E576C22C23BE20230053A203 /* Licenta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E576C23E23BE20260053A203 /* LicentaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E576C25623BE20270053A203 /* Build configuration list for PBXNativeTarget "LicentaTests" */;
+			buildPhases = (
+				E576C23B23BE20260053A203 /* Sources */,
+				E576C23C23BE20260053A203 /* Frameworks */,
+				E576C23D23BE20260053A203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E576C24123BE20260053A203 /* PBXTargetDependency */,
+			);
+			name = LicentaTests;
+			productName = LicentaTests;
+			productReference = E576C23F23BE20260053A203 /* LicentaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E576C24923BE20260053A203 /* LicentaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E576C25923BE20270053A203 /* Build configuration list for PBXNativeTarget "LicentaUITests" */;
+			buildPhases = (
+				E576C24623BE20260053A203 /* Sources */,
+				E576C24723BE20260053A203 /* Frameworks */,
+				E576C24823BE20260053A203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E576C24C23BE20260053A203 /* PBXTargetDependency */,
+			);
+			name = LicentaUITests;
+			productName = LicentaUITests;
+			productReference = E576C24A23BE20260053A203 /* LicentaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E576C22423BE20230053A203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Razvan;
+				TargetAttributes = {
+					E576C22B23BE20230053A203 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					E576C23E23BE20260053A203 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = E576C22B23BE20230053A203;
+					};
+					E576C24923BE20260053A203 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = E576C22B23BE20230053A203;
+					};
+				};
+			};
+			buildConfigurationList = E576C22723BE20230053A203 /* Build configuration list for PBXProject "Licenta" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E576C22323BE20230053A203;
+			productRefGroup = E576C22D23BE20230053A203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E576C22B23BE20230053A203 /* Licenta */,
+				E576C23E23BE20260053A203 /* LicentaTests */,
+				E576C24923BE20260053A203 /* LicentaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E576C22A23BE20230053A203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E576C23323BE20260053A203 /* Assets.xcassets in Resources */,
+				E576C23623BE20260053A203 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576C23D23BE20260053A203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576C24823BE20260053A203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E576C22823BE20230053A203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E576C23923BE20260053A203 /* main.mm in Sources */,
+				E576C23123BE20230053A203 /* AppDelegate.m in Sources */,
+				E562EEC023EF362400F2E41A /* serverCommunication.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576C23B23BE20260053A203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E576C24423BE20260053A203 /* LicentaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E576C24623BE20260053A203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E576C24F23BE20260053A203 /* LicentaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E576C24123BE20260053A203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E576C22B23BE20230053A203 /* Licenta */;
+			targetProxy = E576C24023BE20260053A203 /* PBXContainerItemProxy */;
+		};
+		E576C24C23BE20260053A203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E576C22B23BE20230053A203 /* Licenta */;
+			targetProxy = E576C24B23BE20260053A203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E576C23423BE20260053A203 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E576C23523BE20260053A203 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E576C25123BE20260053A203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E576C25223BE20260053A203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E576C25423BE20270053A203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = Licenta/Licenta.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G2T73UFR2T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/bsm/libbsm.h;
+				INFOPLIST_FILE = Licenta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/gcc/9.2.0_2/lib/gcc/9/**";
+				PRODUCT_BUNDLE_IDENTIFIER = I.Licenta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E576C25523BE20270053A203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = Licenta/Licenta.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G2T73UFR2T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/bsm/libbsm.h;
+				INFOPLIST_FILE = Licenta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/gcc/9.2.0_2/lib/gcc/9/**";
+				PRODUCT_BUNDLE_IDENTIFIER = I.Licenta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E576C25723BE20270053A203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G2T73UFR2T;
+				INFOPLIST_FILE = LicentaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = I.LicentaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Licenta.app/Contents/MacOS/Licenta";
+			};
+			name = Debug;
+		};
+		E576C25823BE20270053A203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G2T73UFR2T;
+				INFOPLIST_FILE = LicentaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = I.LicentaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Licenta.app/Contents/MacOS/Licenta";
+			};
+			name = Release;
+		};
+		E576C25A23BE20270053A203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G2T73UFR2T;
+				INFOPLIST_FILE = LicentaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = I.LicentaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Licenta;
+			};
+			name = Debug;
+		};
+		E576C25B23BE20270053A203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G2T73UFR2T;
+				INFOPLIST_FILE = LicentaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = I.LicentaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Licenta;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E576C22723BE20230053A203 /* Build configuration list for PBXProject "Licenta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E576C25123BE20260053A203 /* Debug */,
+				E576C25223BE20260053A203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E576C25323BE20270053A203 /* Build configuration list for PBXNativeTarget "Licenta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E576C25423BE20270053A203 /* Debug */,
+				E576C25523BE20270053A203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E576C25623BE20270053A203 /* Build configuration list for PBXNativeTarget "LicentaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E576C25723BE20270053A203 /* Debug */,
+				E576C25823BE20270053A203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E576C25923BE20270053A203 /* Build configuration list for PBXNativeTarget "LicentaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E576C25A23BE20270053A203 /* Debug */,
+				E576C25B23BE20270053A203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E576C22423BE20230053A203 /* Project object */;
+}
