@@ -6,6 +6,4 @@ router.post('/create', controller.create_application);
 router.delete('/delete/:id', controller.delete_application);
 router.get('/all', controller.get_all_applications);
 
-router.get('/test', controller.test);
-
 module.exports = router;

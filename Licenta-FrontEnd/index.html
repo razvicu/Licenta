@@ -2,16 +2,26 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <div id="app">
-    {{ message }}
-    <ul>
-        <li v-for="app in apps">
-            <div v-bind:id="'app-' + app.id">
-                <input v-bind:id="'app-checkbox-' + app.id" :value="app.name" type="checkbox" v-model="checkedApps">
-                {{ app.name }}
-            </div>
-        </li>
-    </ul>
-    <button id="saveButton" v-on:click="saveApplicationList">Save</button>
+    <h3 id="welcomeMessage">{{ welcomeMessage }}</h3>
+    <div id="blockers">
+        <div id="applications">
+            {{ appsMessage }}
+            <ul>
+                <li v-for="app in apps">
+                    <div v-bind:id="'app-' + app.id">
+                        <input v-bind:id="'app-checkbox-' + app.id" :value="app.name" type="checkbox" v-model="checkedApps">
+                        {{ app.name }}
+                    </div>
+                </li>
+            </ul>
+            <button class="saveButton" v-on:click="saveApplicationList">Save</button>
+        </div>
+        <div id="websites">
+            {{ websitesMessage }}
+            <textarea rows="10" cols="50" placeholder="Enter website or URL"></textarea>
+            <button class="saveButton" v-on:click="saveWebsitesList">Save</button>
+        </div>
+    </div>
 </div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 

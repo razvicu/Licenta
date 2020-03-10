@@ -1,11 +1,15 @@
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Welcome to social media control',
+        welcomeMessage: 'Welcome to social media control',
+        appsMessage: 'Choose the applications that you want to block',
+        websitesMessage: 'Choose the websites or URLs that you want to block',
         apps: [
             { _id: '1', name: 'Messenger' },
             { _id: '2', name: 'WhatsApp' },
-            { _id: '3', name: 'Chrome' }
+            { _id: '3', name: 'Telegram' },
+            { _id: '4', name: 'Twitter' },
+            { _id: '5', name: 'Slack' }
         ],
         checkedApps: []
     },
@@ -13,13 +17,21 @@ var app = new Vue({
         saveApplicationList() {
             for(let app of this.apps) {
                 if (this.checkedApps.includes(app.name)) {
-                    console.log(app);
+                    console.log('Adding app: ' + app.name);
                     axios.post("http://localhost:3000/create", app)
-                            .then(function(data) {
+                            .then((data) => {
                                 console.log(data);
                             });
-                        }
-                    }
+                } else {
+                    console.log('Deleting app: ' + app.name);
+                    axios.delete("http://localhost:3000/delete/" + app._id).then((data) => {
+                        console.log(data);
+                    });
+                }
+            }
+        },
+        saveWebsitesList() {
+            
         },
         getAllApplications() {
             let apps = [];
@@ -27,7 +39,7 @@ var app = new Vue({
                 console.log(response);
                 for (let app of response.data)
                     apps.push(app.name);
-            })
+            });
             return apps;
         }
     },
