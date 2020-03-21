@@ -10,7 +10,9 @@
                 <li v-for="app in apps">
                     <div v-bind:id="'app-' + app.id">
                         <input v-bind:id="'app-checkbox-' + app.id" :value="app.name" type="checkbox" v-model="checkedApps">
-                        {{ app.name }}
+                        <span id="name"> {{ app.name }} </span>
+                        <input type="number" min="1" max="999" blur="enforceBounds(this)" v-model="app.time"> 
+                        mins
                     </div>
                 </li>
             </ul>
@@ -24,5 +26,14 @@
     </div>
 </div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
 <script src="main.js"></script>
+<script>
+    enforceBounds = (elem) => {
+        if (elem == "")
+            return;
+        if (parseInt(elem.value) < parseInt(elem.min))
+            elem.value = elem.min;
+        if (parseInt(elem.value) > parseInt(elem.max))
+            elem.value = elem.max;
+    }
+</script>

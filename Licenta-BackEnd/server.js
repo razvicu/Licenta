@@ -38,12 +38,9 @@ const server = net.createServer(async (socket) => {
         console.log(data.toString());
         let valz = await local_controller.get_all_applications_last_value();
         console.log(valz);
-        let to_send = "";
-        for (let val of valz) {
-            to_send += val.name + "\n";
-        }
+        let to_send = valz;
         console.log("About to send: " + to_send);
-        socket.write(to_send.length > 0 ? to_send : "none");
+        socket.write(to_send.length > 0 ? JSON.stringify(to_send) : JSON.stringify("name: none"));
     });
 })
 server.listen(3099);

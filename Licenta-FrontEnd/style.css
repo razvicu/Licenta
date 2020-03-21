@@ -10,8 +10,13 @@ ul {
 
 }
 
+input[type=number] {
+    width: 40px;
+}
+
 #welcomeMessage {
     margin: 0 auto;
+    margin-bottom: 20px;
     width: 25%;
 }
 
@@ -39,6 +44,15 @@ ul {
     padding: 10px;
     width: 30%;
     justify-content: space-around;
+}
+
+#name {
+    display: inline-block;
+    width: 80px;
+}
+
+li div {
+    margin: 10px;
 }
 
 #websites textarea {

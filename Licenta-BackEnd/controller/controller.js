@@ -4,10 +4,11 @@ const net = require('net');
 exports.create_application = (req, res) => {
     let app = new Application({
         _id: req.body._id,
-        name: req.body.name
+        name: req.body.name,
+        time: req.body.time
     });
 
-    app.save((err) => {
+    /*app.updateOne((err) => {
         if (err && err.code == 11000) {
             console.log("Application with id " + app._id + " already exists");
             res.send("Application with id " + app._id + " already exists");
@@ -15,7 +16,17 @@ exports.create_application = (req, res) => {
         }
         console.log('Created app with id ' + app._id);
         res.send('Application created successfully!');
+    });*/
+
+    Application.findOneAndUpdate({_id: app._id}, app.toObject(), {upsert: true}, (err, doc) => {
+        if (err) {
+            console.log("Application with id " + app._id + "could not be created or updated");
+            return res.send(500, {error: err});
+        }
+        console.log('Created or updated app with id ' + app._id);
+        return res.send('Application saved successfully!');
     });
+
 }
 
 exports.delete_application = (req, res) => {
