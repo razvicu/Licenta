@@ -8,16 +8,6 @@ exports.create_application = (req, res) => {
         time: req.body.time
     });
 
-    /*app.updateOne((err) => {
-        if (err && err.code == 11000) {
-            console.log("Application with id " + app._id + " already exists");
-            res.send("Application with id " + app._id + " already exists");
-            return;
-        }
-        console.log('Created app with id ' + app._id);
-        res.send('Application created successfully!');
-    });*/
-
     Application.findOneAndUpdate({_id: app._id}, app.toObject(), {upsert: true}, (err, doc) => {
         if (err) {
             console.log("Application with id " + app._id + "could not be created or updated");

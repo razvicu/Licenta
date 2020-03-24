@@ -11,6 +11,7 @@
 #include <string>
 #include <thread>
 #include <vector>
+#include <set>
 #import <EndpointSecurity/EndpointSecurity.h>
 #import <bsm/libbsm.h>
 #import "communicator.hpp"
@@ -36,7 +37,7 @@ int main() {
                 break;
             case ES_EVENT_TYPE_NOTIFY_GETATTRLIST: {
                 process = message->event.exec.target;
-                std::cout << "FSGETPATH event\n";
+                //std::cout << "GETATTRLIST event\n";
                 for (const auto &app_ : apps)
                     for ( NSRunningApplication* app in NSWorkspace.sharedWorkspace.runningApplications )
                     {
