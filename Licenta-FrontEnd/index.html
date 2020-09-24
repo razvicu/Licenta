@@ -1,39 +1,16 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-socket.io@3.0.7/dist/vue-socketio.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <div id="app">
     <h3 id="welcomeMessage">{{ welcomeMessage }}</h3>
     <div id="blockers">
-        <div id="applications">
-            {{ appsMessage }}
-            <ul>
-                <li v-for="app in apps">
-                    <div v-bind:id="'app-' + app.id">
-                        <input v-bind:id="'app-checkbox-' + app.id" :value="app.name" type="checkbox" v-model="checkedApps">
-                        <span id="name"> {{ app.name }} </span>
-                        <input type="number" min="1" max="999" blur="enforceBounds(this)" v-model="app.time"> 
-                        mins
-                    </div>
-                </li>
-            </ul>
-            <button class="saveButton" v-on:click="saveApplicationList">Save</button>
-        </div>
-        <div id="websites">
-            {{ websitesMessage }}
-            <textarea rows="10" cols="50" placeholder="Enter website or URL"></textarea>
-            <button class="saveButton" v-on:click="saveWebsitesList">Save</button>
-        </div>
+        <application-area></application-area>
+        <website-area></website-area>
     </div>
+    <footer>
+        <a href="https://www.freepik.com/free-photos-vectors/design">Design vector created by freepik - www.freepik.com</a>
+    </footer>
 </div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="main.js"></script>
-<script>
-    enforceBounds = (elem) => {
-        if (elem == "")
-            return;
-        if (parseInt(elem.value) < parseInt(elem.min))
-            elem.value = elem.min;
-        if (parseInt(elem.value) > parseInt(elem.max))
-            elem.value = elem.max;
-    }
-</script>

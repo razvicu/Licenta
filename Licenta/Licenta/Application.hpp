@@ -1,46 +1,36 @@
 //
-//  Header.h
+//  Application.h
 //  Licenta
 //
 //  Created by Razvan on 3/23/20.
 //  Copyright © 2020 Razvan. All rights reserved.
 //
 
-#ifndef Header_hpp
-#define Header_hpp
+#ifndef Application_hpp
+#define Application_hpp
 
 #include <iostream>
+#include "db/dbconn.hpp"
+#include "db/statement.hpp"
+#include "db/row.hpp"
+
+#define DB_PATH "/private/opt/licenta/lic.db"
 
 class Application {
 public:
-    Application(std::string id, std::string name, int time) {
-        this->id = id;
-        this->name = name;
-        this->allowed_for_duration = time;
-        this->start_count = std::time(nullptr);
-    }
-    std::string getId() const {
-        return this->id;
-    }
-    std::string getName() const {
-        return this->name;
-    }
-    int getAllowedForDuration() const {
-        return this->allowed_for_duration;
-    }
-    time_t getStartCount() const {
-        return this->start_count;
-    }
-    friend std::ostream& operator<<(std::ostream& out, const Application& app) {
-        out << "id: " << app.id << " name: " << app.name << " allowed for: " << app.allowed_for_duration <<
-            " starting at: " << app.start_count << "\n";
-        return out;
-    }
+    Application(std::string, std::string, int, int);
+    void save();
+    std::string getId() const;
+    std::string getName() const;
+    int getAllowedForDuration() const;
+    void setAllowedForDuration(int);
+    void setLastUpdatedTime(int);
+    int getLastUpdatedTime() const;
 private:
     std::string id;
     std::string name;
     int allowed_for_duration;
-    time_t start_count;
+    int last_updated_time;
 };
 
 

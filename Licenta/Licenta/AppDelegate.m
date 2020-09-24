@@ -15,14 +15,22 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-}
+NSStatusItem *appStatusItem;
 
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    NSStatusBar *appStatusBar = [NSStatusBar systemStatusBar];
+    appStatusItem = [appStatusBar statusItemWithLength:NSVariableStatusItemLength];
+    [appStatusItem.button setImage:[NSImage imageNamed:@"logo.png"]];
+}
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
+
+- (void)startIt:(NSTimer *)timer {
+    return;
+}
+
 
 
 @end

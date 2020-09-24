@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
-    "express": "^4.17.1"
+    "cors-server": "^1.0.4",
+    "express": "^4.17.1",
+    "vue-socket.io": "^3.0.7"
   }
 }

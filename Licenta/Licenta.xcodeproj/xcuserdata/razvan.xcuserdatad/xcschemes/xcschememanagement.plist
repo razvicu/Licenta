@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NetworkFilter.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>E5610661245B2AB1003BD5AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E576C22B23BE20230053A203</key>
 		<dict>
 			<key>primary</key>
