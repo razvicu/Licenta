@@ -1,0 +1,9 @@
+.DS_STORE
+Assets.xcassets
+Licenta.xcodeproj
+LicentaTests
+LicentaUITests
+socketio
+node_modules
+server.key
+
